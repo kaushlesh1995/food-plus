@@ -7,7 +7,8 @@ import { WebbarComponent } from './shared/components/webbar/webbar.component';
 const routes: Routes = [
   {path : "" , component: HomecarogelComponent},
   {path : "our-menu" , component: OurmenuComponent},
-  {path : "webbar" , component : WebbarComponent}];
+  {path : "webbar" , component : WebbarComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -7,7 +7,6 @@ import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
-import { WebbarComponent } from './shared/components/webbar/webbar.component';
 
 import { HomeModule } from './feature/home/home/home.module';
 
@@ -30,7 +29,6 @@ import {MatDialogModule} from "@angular/material/dialog";
     AppComponent,
     FooterComponent,
     NavbarComponent,
-    WebbarComponent,
     DeliveryLocationComponent,
     CreateComponent,
     LoginComponent,
@@ -50,7 +48,7 @@ import {MatDialogModule} from "@angular/material/dialog";
     ReactiveFormsModule,
   ],
   providers: [
-     
+
   ],
   bootstrap: [AppComponent],
   schemas: [
