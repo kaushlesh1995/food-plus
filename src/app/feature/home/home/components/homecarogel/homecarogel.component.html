@@ -1,0 +1,166 @@
+<div class="webbar-top-wrapper">
+    <div class="top-circular-bar"></div>
+ </div>
+ 
+ <section class="main-wrapper" style="margin-top: -278px; position: relative; background-color: transparent !important;">
+    <section class="section sec-hp-slider">
+       <div class="hp-slider owl-carousel owl-loaded owl-drag">
+            <div class="owl-stage-outer">
+                <div class="owl-stage owl-slider-style">
+                    <div class="owl-item" style="width:567px; margin-right:15px">
+                     <a href="#">
+                         <img src="https://biryaniblues.com/assets/uploads/home_slider/1600683815homeIPL.png" alt>
+                     </a>
+                    </div>
+                    <div class="owl-item" style="width:567px; margin-right:15px">
+                        <a href="#">
+                            <img src="https://biryaniblues.com/assets/uploads/home_slider/1586248415Hygieneweb-banner.jpg" alt>
+                        </a>
+                       </div>
+                       <div class="owl-item" style="width:567px; margin-right:15px">
+                        <a href="#">
+                            <img src="https://biryaniblues.com/assets/uploads/home_slider/1600683815homeIPL.png" alt>
+                        </a>
+                       </div>
+                       <div class="owl-item" style="width:567px; margin-right:15px">
+                        <a href="#">
+                            <img src="https://biryaniblues.com/assets/uploads/home_slider/1600683815homeIPL.png" alt>
+                        </a>
+                       </div>
+                       <div class="owl-item" style="width:567px; margin-right:15px">
+                        <a href="#">
+                            <img src="https://biryaniblues.com/assets/uploads/home_slider/1603472003470x780.jpg" alt>
+                        </a>
+                       </div>
+                       <div class="owl-item" style="width:567px; margin-right:15px">
+                        <a href="#">
+                            <img src="https://biryaniblues.com/assets/uploads/home_slider/1600683815homeIPL.png" alt>
+                        </a>
+                       </div>
+                       <div class="owl-item" style="width:567px; margin-right:15px">
+                        <a href="#">
+                            <img src="https://biryaniblues.com/assets/uploads/home_slider/1600683815homeIPL.png" alt>
+                        </a>
+                       </div>
+                       <div class="owl-item" style="width:567px; margin-right:15px">
+                        <a href="#">
+                            <img src="https://biryaniblues.com/assets/uploads/home_slider/1565087273600x400-02double_ka_meetha.jpg" alt>
+                        </a>
+                       </div>
+                       ::after
+                    </div>
+            </div>
+            <div class="owl-nav disabled">
+                <div class="owl-prev">prev</div>
+                <div class="owl-next">next</div>
+            </div>
+            <div class="owl-dots">
+                <div class="owl-dot">
+                    <span></span>
+                </div>
+                <div class="owl-dot active">
+                    <span></span>
+                </div>
+                <div class="owl-dot">
+                    <span></span>
+                </div>
+            </div>
+       </div>
+    </section>
+</section> 
+
+
+
+<!-- OurMenu Code HTML Here -->
+
+<section class="section">
+  <div class="container">
+      <div class="title-background-circle">
+    </div>
+   <div class="title text-center">
+        <h2 class="title-lg">OUR MENU</h2>
+    </div>
+    <ul class="nav recipe-nav-tab mb-2">
+      <li class="nav-item ">
+          <a href="javascript:void(0);" class="nav-link  nav-active">
+              <img src="https://biryaniblues.com/assets/frontend/images/icon-delivery.png" alt="icon Delivery" class="img-icon">
+              Delivery
+          </a>
+      </li>
+      <li class="nav-item">
+        <a href="javascript:void(0);" class="nav-link take-away">
+            <img src="https://biryaniblues.com/assets/frontend/images/icon-takeaway.png"  class="img-icon">
+        Take Away
+        </a>
+      </li>
+      <li class="nav-item ml-auto d-flex aligns-item-center">
+          <div class="slider-div" #vegButton (click)="vegButtonChange()">
+                <span class="slider-btn"></span>
+                <span class="slider-btn-name">Veg Only</span>
+          </div>
+    </li>
+    </ul>
+ </div>
+</section>
+
+<div class="main-div">
+    <div class="combo-div">
+        <div class="container">
+            <header class="title-head d-flex align-items-center">
+                <h2 class="title-offers title-lg">Combo Offers</h2>
+            </header>
+            <div class="row row-gap menu-list">
+                <div class="col-md-4 col-lg-3" *ngFor="let item of ourMenuArray">
+                    <div class="card-recipe card">
+                        <div class="card-recipe-img mb-3">
+                            <a href="#" >
+                                <figure class="recipe-img">
+                                    <img src={{item.img}} alt="test">
+                                </figure>
+                            </a>
+                        </div>
+                        <a href="#">
+                            <header class="recipe-header-img mb-3">
+                                <h3 class="recipe-title" title="Chkn Biryani Serv1 with Shammi Kebab 2pc">
+                                    <span class="food-mark mark-nonveg"></span>
+                                    {{item.title}}
+                                </h3>
+                                <p class="p-text-color">{{item.data}}</p>
+                            </header>
+                        </a>
+                        <footer class="card-recipe-footer d-flex  align-items-center">
+                            <h4 class="m-0">
+                                <i class="fa fa-rupee"></i>
+                               {{item.money}}
+                            </h4>
+                            <a href="javascript:void(0)" class="btn btn-add ml-auto">Add +</a>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <modal #takeAway>
+    <modal-content>
+        
+    </modal-content>
+    <modal-footer>
+        <button class="btn btn-danger" (click)="delete()">Delete</button>
+    </modal-footer>
+</modal> -->
+
+
+
+
+
+    
+
+
+
+
+    
+
+
+

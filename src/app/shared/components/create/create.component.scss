@@ -1,0 +1,131 @@
+.forgot-component-wrapper{
+    .top-forgot-bar{
+        height: 340px;
+        width: 100%;
+        border-bottom-right-radius: 6%;
+        border-bottom-left-radius: 6%;
+        background: #26c9ec;
+        position: absolute;
+        overflow: hidden;
+    }
+
+    .close-sidenav {
+        float: right;
+        height: 35px;
+        width: 35px; 
+        background-color: white;
+        position: relative;
+        border-radius: 100%;
+        margin-right: 28px;
+        margin-top: 25px;
+        &:hover{
+            box-shadow: 0px 1px 9px 1px #94835c;
+        }
+    }
+
+    .close-btn{
+        color: #26c9ec;
+        text-align: center;
+        font-size: 20px;
+        margin: 7px 11px 6px 11px;
+        position: absolute;
+        cursor: pointer;
+    }
+   .test{ background: url(https://biryaniblues.com/assets/frontend/images/logo.png) no-repeat top center #00c0e8;
+       position: relative;
+       margin-left: 194px;
+       box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+       img {
+          max-width: 100%;
+          height: auto;
+          vertical-align: middle;
+          border-style: none;
+        }
+    } 
+}
+.blockscroll {
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    height: 230px;
+    overflow: hidden;
+    margin-top: 42px;
+    position: relative;
+    padding: 20px;
+    width: 448px;
+    margin-left: 30px;
+    z-index: 2;
+    p{
+        margin-top: -19px;
+        font-size: 13.6px Ubuntu, sans-serif;
+        color: #777777;
+    }
+}
+
+.form-group{
+    margin-bottom: 1rem;
+}
+.with-label {
+    position: relative;
+    .input-group-text {
+        background: none;
+        border: solid #ccc;
+        border-width: 0 1px 0 0;
+        border-radius: 0;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        line-height: 1;
+        padding: 0 10px 0 0;
+    }
+}
+
+.form-control {
+    box-shadow: none !important;
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    font-size: 1rem;
+    padding-left: 54px;
+    font-weight: 400;
+    line-height: 1.5;
+    border: none;
+    color: #495057;
+    border-bottom: solid 2px #00c0e8;
+   
+}
+
+.invalid-form-error {
+    font-size: 80%;
+    width: 100%;
+    margin-top: .25rem;
+    color: #fb6340;
+    padding: 5px 10px;
+    text-align: initial;
+}
+.btn-color {
+    border-color: #faa620;
+    color: #fff;
+    background-color: #faa620;
+    margin-top: 14px;
+    box-shadow: none !important;
+}
+.btn {
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 1rem;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.sidebar-modal-footer {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.text-center {
+    text-align: center!important;
+}
+.login-account{
+    margin-top: 41px;
+    margin-left: 23px;
+}

@@ -1,0 +1,29 @@
+
+<div class="forgot-component-wrapper">
+    <div class="top-forgot-bar">
+    </div>
+    <div class="close-sidenav">
+        <span class="close-btn" (click)="closeComponent()">X</span>
+    </div>
+    <img src="https://biryaniblues.com/assets/frontend/images/logo.png" class="test" alt>
+    <div class="blockscroll">
+        <header class="sidebar-modal-header">
+            <h2 class="title">SIGN UP</h2>
+            <p>Enter your mobile number to continue</p>
+        </header>
+        <form [formGroup]="createForm">
+            <div class="form-group with-label">
+                <label class="input-group-text" for="inputPhone">+91</label>
+                <input type="tel" maxlength="10" placeholder="Enter Mobile Number" formControlName="mobileNumber"
+                    class="form-control">
+                <span class="invalid-form-error">{{error}}</span>
+                <button class="btn btn-lg btn-block btn-color" type="button" (click)="create()">SIGN UP</button>
+            </div>
+        </form>
+    </div>
+    <footer class="sidebar-modal-footer text-center">
+        <p class="login-account"> Already have an Account?
+            <span style="color:#00c0e8; cursor: pointer;" (click)="onLoginClick()">Loing</span>
+        </p>
+    </footer>
+</div>

@@ -1,1 +1,193 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+a:hover {
+    cursor: pointer !important;
+    color: #fff !important;
+}
+
+html, body {
+    height: 100%;
+    position: relative;
+}
+body {
+    color: #131411;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.85rem;
+    background: #f3f6fa;
+}
+
+.header-top{
+    height: 40px;
+    background: rgba(0,0,0,0.05);
+    z-index: 11;
+    position: relative;
+}
+.a-cursor{
+    &:hover{ 
+    cursor: pointer;
+    }
+}
+
+.link-reward {
+    background: url('https://biryaniblues.com/assets/frontend/images/reward-icon.svg') no-repeat 10px center #f02343;
+    background-size: 24px;
+    color: #fff;
+    font-family: serif;
+    padding: 8px 20px 10px 40px;
+    border-radius: 0 0 10px 10px;
+    margin: 0 20px 0 0;
+}
+
+
+.link-phone {
+    background: url('https://biryaniblues.com/assets/frontend/images/phone-icon.svg') no-repeat 0 center;
+    color: #fff;
+    padding: 0 10px 0 25px;
+    margin-right: 15px;
+    background-size: 22px;
+    cursor: pointer !important;
+    font-size: 1rem;
+    font-weight: 700;
+    border-right: solid 2px #3bcae9;
+}
+ .overlap-to-div{
+    padding: 0%;
+    margin: 0%;
+ }
+ .navbar {
+     padding: 0 !important;
+ }
+ .navbar-brand {
+    display: inline-block;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+.fixed .navbar-brand {
+    top: -13px;
+    padding: 0 10px;
+    max-width: 80px;
+    border-radius: 0;
+}
+.blue-img {
+    max-width: 100%;
+    height: auto;
+    margin-top: -45px;
+    vertical-align: middle;
+    border-style: none;
+}
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+   
+    width: 100%;
+    z-index: 10;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.current-location-btn {
+    color: #fff !important;
+    background: url('https://biryaniblues.com/assets/frontend/images/map-icon.svg') no-repeat 0 center;
+    padding: 6px 26px !important;
+    font-weight: 400;
+    background-size: 28px;
+    position: relative;
+    max-width: 240px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.current-location-btn .fa {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.toggle-btn {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 10;
+    cursor: pointer;
+    width: 50px;
+    height: 62px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    display: none;
+}
+
+#header .navbar{
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.d-md-block {
+    display: block!important;
+}
+.nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.navbar .nav>.nav-item {
+    margin-right: 1rem;
+}
+
+.offer-carousel-wrapper {
+    width: 600px;
+    height: 600px;
+}
+
+// .example-container {
+//     width: 400px;
+//     height: 200px;
+//     margin: 12px;
+//     border: 1px solid #555;
+//   }
+.mat-drawer-content {
+    position: relative;
+    z-index: 1;
+    display: block;
+    height: 100%;
+    /* overflow: auto; */
+    overflow-x: hidden;
+}
+  mat-drawer-content {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   
+  }
+
+  .example-container {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    margin: 0%;
+    background: transparent;
+    
+  }
+  
+  mat-sidenav-containert {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mat-sidenav{
+     
+      background-color : #fff;
+      width: 496px;
+      overflow: hidden;
+  }
