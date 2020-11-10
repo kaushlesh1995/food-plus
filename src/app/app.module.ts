@@ -9,7 +9,7 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 
 import { HomeModule } from './feature/home/home/home.module';
-
+import { HomeRoutingModule } from './feature/home/home/home.routing.module';
 
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -21,8 +21,6 @@ import {  FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ForgotComponent } from './shared/components/forgot/forgot.component';
 import { CommonModule } from '@angular/common';
 import {MatDialogModule} from "@angular/material/dialog";
-
-
 
 @NgModule({
   declarations: [
@@ -38,6 +36,7 @@ import {MatDialogModule} from "@angular/material/dialog";
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HomeRoutingModule,
     HomeModule,
     CommonModule,
     MatSidenavModule,
