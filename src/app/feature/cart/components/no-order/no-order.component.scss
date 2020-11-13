@@ -1,0 +1,66 @@
+.webbar-top-wrapper {
+    height: 280px;
+    width: 100%;
+}
+.top-circular-bar {
+    height: 64vw;
+    width: 67.5vw;
+    margin-top: -28vw;
+    margin-right: -12vw;
+    border-radius: 100%;
+    background: #26c9ec;
+    position: absolute;
+    right: 0;
+}
+    
+.no-order-list{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.order-empty-bag{
+    height: 410px;
+    margin: 0 auto;
+    margin-left: 418px;
+    overflow: hidden;
+    margin-top: -70px;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+
+.title{
+    color: #666;
+    font-size: 1.7rem;
+    font-family: revert;
+    margin-left: 47px;
+    margin-top: 18px;
+   
+}
+
+p{
+    color: #666;
+    font-size: 1.2rem;
+    max-width: 329px;
+    text-align: center;
+    font-family: unset;
+}
+.add-item-button{
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    color: #fff;
+    margin-left: 493px;
+    margin-bottom: 27px;
+    border-radius: 25px;
+    background-color: #26c9ec;
+    font-size : 1.1rem;
+    padding: 9px 3px 0px 23px;
+    cursor: pointer;
+    &:hover{
+        background-color:#00c0e8;
+    }
+}
+

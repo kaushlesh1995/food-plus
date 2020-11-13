@@ -14,6 +14,9 @@
       <ng-container *ngSwitchCase="'create'">
         <app-create (close)="closeSidenav()" (loginComponent)="openSidenav('contact')"></app-create>
       </ng-container>
+      <ng-container *ngSwitchCase="'takeway'">
+        <app-takeway-location (takewayLocation)="closeSidenav()"></app-takeway-location>
+      </ng-container>
     </ng-container>
   </mat-sidenav>
   <mat-sidenav-content>

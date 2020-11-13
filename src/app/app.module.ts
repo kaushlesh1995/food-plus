@@ -22,6 +22,8 @@ import {  FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ForgotComponent } from './shared/components/forgot/forgot.component';
 import { CommonModule } from '@angular/common';
 import {MatDialogModule} from "@angular/material/dialog";
+import { TakeawayConfirmationComponent } from './feature/home/home/components/takeaway-confirmation/takeaway-confirmation.component';
+import { TakewayLocationComponent } from './feature/home/home/components/takeway-location/takeway-location.component';
 
 
 
@@ -34,7 +36,9 @@ import {MatDialogModule} from "@angular/material/dialog";
     DeliveryLocationComponent,
     CreateComponent,
     LoginComponent,
-    ForgotComponent
+    ForgotComponent,
+    TakeawayConfirmationComponent,
+    TakewayLocationComponent
 
   ],
   imports: [
