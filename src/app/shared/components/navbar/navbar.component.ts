@@ -1,7 +1,9 @@
+import { Route } from '@angular/compiler/src/core';
 import { EventEmitter, ViewChild } from '@angular/core';
 import { Output } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
+import { Router } from '@angular/router';
 import { CratService } from 'src/app/feature/cart/service/crat.service';
 import { SidenavService } from '../../service/app-service/sidenav.service';
 
@@ -15,11 +17,15 @@ export class NavbarComponent implements OnInit {
   public count = 0
 
   constructor(private sidenavService:SidenavService,
-    private  addOrderservice : CratService
+    private  addOrderservice : CratService,
+    private route : Router
     ) { }
 
   ngOnInit(): void {
     this.addProduct();
+    this.addCount();
+    
+    
   }
 
   openLoginSidenav(){
@@ -34,5 +40,10 @@ export class NavbarComponent implements OnInit {
        }      
     })
   }
+
+  addCount(){
+    this.addOrderservice.addProductSubject.next('')
+  }
+  
 
 }

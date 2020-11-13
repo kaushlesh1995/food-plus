@@ -98,10 +98,7 @@ p{
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
     background-color: #fff;
 }
-// .col-lg-4 {
-//     flex: 0 0 33.3333333333%;
-//     max-width: 31.5% !important;
-// }
+
 
 .takeway-details-text{
     height: 30px;
@@ -309,4 +306,25 @@ h5{
     margin-top: 91px;
     margin-left: 208px;
     
+}
+
+.order-item-img-box{
+    display: flex;
+     margin-top: 32px;
+      height: 100%;
+       width: 100%;
+       
+}
+.img-card{
+    float: left;
+    height: 100px;
+    width: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
+}
+.food-details{
+    float: right;
+     margin-left: 20px;
+      height: 100px;
+       width: 50%
 }
