@@ -1,0 +1,312 @@
+.webbar-top-wrapper {
+    height: 280px;
+    width: 100%;
+}
+.top-circular-bar {
+    height: 64vw;
+    width: 67.5vw;
+    margin-top: -28vw;
+    margin-right: -12vw;
+    border-radius: 100%;
+    background: #26c9ec;
+    position: absolute;
+    right: 0;
+}
+
+.order-list-main-wraper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: -45px;
+}
+header{
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #153b50;
+}
+.header-dashboard{
+    display: flex;
+    padding: 34px 2px 2px 2px;
+    padding-left: 12px;
+   
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+    margin-left: 28px;
+}
+
+p{
+    margin-left: 13px;
+    margin-top: 8px;
+    position: absolute;
+    font-size: 1rem;
+}
+.order-section{
+    height: 100%;
+    width: 166%;
+    float: left;
+}
+.payment-section{
+    height: 100%;
+    width: 100%;
+    float: right;
+}
+.main-section{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.text-center{
+    height: 35px; 
+    width: 35px;
+     margin-top: 2px; 
+     background-color:#26c9ec;
+      border-radius: 100%; 
+      color:#fff ;
+     
+      &:hover{
+        background-color: #FF9000; 
+  }
+}
+
+.order-text {
+    margin-left: 29px;
+    margin-top: -34px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+     &:hover{
+          color: #FF9000 !important; 
+    }
+}
+.order-item-wraper{
+    height: 100%;
+    width: 100%;
+    margin-top: 18px;
+    
+}
+
+
+.takeway-details-card{
+    height: 150px;
+    width: 93%;
+    margin-left: 27px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+}
+// .col-lg-4 {
+//     flex: 0 0 33.3333333333%;
+//     max-width: 31.5% !important;
+// }
+
+.takeway-details-text{
+    height: 30px;
+    width: 211px;
+    border-radius: 9px 0px 17px 0px;
+    background-color: #FF9000;
+    color: #fff;
+   
+}
+.header-text{
+    margin-left: 37px;
+    margin-top: 5px;
+    position: absolute;
+    font-size: 1rem;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 15px !important;
+}
+
+h5{
+    font-size: 1.1rem;
+    color: #000;
+}
+
+.order-amount-card-wrapper{
+    height: 400px;
+    margin-left: 6%;
+    width: 93%;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 1px;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
+}
+.amount-card-header{
+    margin-top: 50px;
+    font-size: 25px;
+    font-family: inherit;
+    margin-left: 11px;
+}
+.amount-card-header-under-paragraph{
+    margin-top: -18px;
+}
+
+.amount-card-center{
+    display: flex;
+    height: 50%;
+    width: 100%;
+    margin-top: 63px;
+}
+.amount-card-product{
+    float: left;
+    width: 80%;
+    margin-left: 13px;
+}
+.amount-card-money{
+    float: right;
+    width: 20%;
+}
+.total{
+    width: 100%;
+    height: 30px;
+    background-color: aquamarine;
+}
+.total-amount{
+    height: 54px;
+    border-radius: 0px 1px 12px 12px;
+    width: 100%;
+    background-color:#ebfcf2;
+    color: #099E44;
+}
+.ml-auto{
+    margin-left: 253px;
+}
+
+.total-footer-text-left{
+    margin-left: 26px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.total-footer-text-right{
+    margin-right: 26px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.takeway-details-Apply-card{
+    height: 100px;
+    margin-left: 6%;
+    width: 92%;
+    margin-top: 24px;
+    padding: 1px 32px 19px 25px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+}
+
+.apply-cupan{
+    height: 60px;
+    width: 328px;
+    background-color: #eefbfe;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 19px;
+    color: #26c9ec;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    &:hover{
+        background-color: #e4f4f8
+    }
+}
+
+.icon-discount{
+    background: url('https://biryaniblues.com/assets/frontend/images/discount-icon.svg') no-repeat center;
+    background-size: 30px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.next-page-Apply-card{
+    height: 50px;
+    margin-left: 6%;
+    width: 92%;
+    margin-top: 24px;
+    border-radius: 6px;
+    background-color: rgb(22, 193, 236);
+    &:hover{
+        background-color: rgb(28, 148, 179);
+    }
+  
+}
+
+.next-page{
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 9px;
+    padding: 7px 0px 0px 2px;
+    font-family: system-ui;
+    cursor: pointer;  
+}
+
+.order-items{
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        background-color: #fff; 
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
+}
+.order-header{
+    height: 240px;
+    display: flex; 
+    padding: 15px;
+     width: 100%;
+}
+.left-side-order{
+    height: 10px;
+    width: 100%; 
+    float: left;
+    padding: 6px;
+   
+}
+
+.right-side-amount{
+    height: 10px;
+    width: 100%;
+    float: left;
+    margin-left: 64px;
+   
+    padding-top: 19px;
+}
+.delete-btn{
+    height: 22px;
+    width: 22px;
+    background-color: red;
+    border-radius: 100%;
+    color: #fff;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.fa-trash-o:before {
+    content: "";
+    margin: 15px -15px 8px 5px;
+    vertical-align: -3px;
+}
+#delete-btn-text{
+    color: red;
+    font-family: auto;
+    font-weight: bolder;
+    margin: 1px -8px -8px -13px;
+    padding: 15px;
+    
+}
+.product-price{
+    height: 70px;
+    width: 79px;
+    font-size: 20px;
+    margin-top: 91px;
+    margin-left: 208px;
+    
+}

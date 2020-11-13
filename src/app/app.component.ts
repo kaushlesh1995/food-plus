@@ -3,6 +3,8 @@ import { ResponsiveService } from './shared/service/app-service/responsive.servi
 import { SwiperOptions } from 'swiper'
 import { Route } from '@angular/compiler/src/core';
 import { MatSidenav } from '@angular/material/sidenav';
+import { SidenavService } from './shared/service/app-service/sidenav.service';
+// import { type } from 'os';
 
 @Component({
   selector: 'app-root',
@@ -13,8 +15,8 @@ export class AppComponent implements OnInit  {
   title = 'food-plus';
   componentType = '';
   @ViewChild('sidenav') sidenav: MatSidenav;
-  constructor(private responsiveService:ResponsiveService
-             
+  constructor(private responsiveService:ResponsiveService,
+            private sidenavService : SidenavService
     ){
   }
 
@@ -29,6 +31,7 @@ export class AppComponent implements OnInit  {
       }
     });
     this.onResize();    
+    this.subscribeNotifier();
   }
 
   onResize(){
@@ -37,7 +40,7 @@ export class AppComponent implements OnInit  {
 
   openSidenav(type: string) {
     this.componentType = type;
-    if(type == 'forgot' || type == 'create' || type == 'contact' ) {
+    if(type == 'forgot' || type == 'create' || type == 'contact'  ) {
       this.sidenav.close();
       setTimeout(()=>{
         this.sidenav.open()
@@ -49,6 +52,14 @@ export class AppComponent implements OnInit  {
   }
   closeSidenav() {
     this.sidenav.close(); 
+  }
+
+  subscribeNotifier(){
+    this.sidenavService.notyfier.subscribe((data)=>{
+      if(data != null && data != '') {
+        this.openSidenav(data)
+      }
+    })
   }
 
 

@@ -2,7 +2,8 @@
     padding: 180px 0 0;
     color: #fff;
     position: relative;
-    overflow: hidden !important;
+    // overflow: hidden !important;
+    overflow-x: hidden;
 }
 #footer:before {
     content: '';
@@ -123,7 +124,7 @@ h5 {
 .app-btn a {
     display: inline-block;
 }
-constructed stylesheet
+
 .mt-2, .my-2 {
     margin-top: .5rem!important;
 }

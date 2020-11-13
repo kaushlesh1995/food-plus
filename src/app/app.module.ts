@@ -21,6 +21,10 @@ import {  FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ForgotComponent } from './shared/components/forgot/forgot.component';
 import { CommonModule } from '@angular/common';
 import {MatDialogModule} from "@angular/material/dialog";
+import { TakeawayConfirmationComponent } from './feature/home/home/components/takeaway-confirmation/takeaway-confirmation.component';
+import { TakewayLocationComponent } from './feature/home/home/components/takeway-location/takeway-location.component';
+import { CartModule } from './feature/cart/cart.module';
+import { CartRoutingModule } from './feature/cart/cart.routing.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,9 @@ import {MatDialogModule} from "@angular/material/dialog";
     DeliveryLocationComponent,
     CreateComponent,
     LoginComponent,
-    ForgotComponent
+    ForgotComponent,
+    TakeawayConfirmationComponent,
+    TakewayLocationComponent
 
   ],
   imports: [
@@ -45,6 +51,8 @@ import {MatDialogModule} from "@angular/material/dialog";
     MatCommonModule,
     FormsModule,
     ReactiveFormsModule,
+    CartModule,
+    CartRoutingModule
   ],
   providers: [
 
