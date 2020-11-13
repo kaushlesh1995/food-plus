@@ -1,3 +1,0 @@
-# food-plus
-
-Dummy Data
