@@ -7,6 +7,7 @@ a:hover {
 
 html, body {
     height: 100%;
+    overflow-x: hidden;
     position: relative;
 }
 body {
@@ -57,6 +58,7 @@ body {
  .navbar {
      padding: 0 !important;
  }
+
  .navbar-brand {
     display: inline-block;
     padding-bottom: .3125rem;
@@ -89,6 +91,20 @@ body {
     transition-duration: 0.4s;
 }
 
+.sticky-header {
+    .navbar {
+        background: #26c9ec;
+        box-shadow: 1px -1px 9px 2px #6d6c6c;
+        .blue-img {
+            height: 80px;
+            margin-top: 0px;
+        }
+    }
+
+    .header-top {
+        display: none;
+    }
+}
 .current-location-btn {
     color: #fff !important;
     background: url('https://biryaniblues.com/assets/frontend/images/map-icon.svg') no-repeat 0 center;
