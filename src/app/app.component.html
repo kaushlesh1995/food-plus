@@ -19,7 +19,7 @@
       </ng-container>
     </ng-container>
   </mat-sidenav>
-  <mat-sidenav-content>
+  <mat-sidenav-content (scroll)="onScroll($event)">
 
     <div class="app-body overlap-to-div" (window:resize)="onResize()">
       

@@ -15,7 +15,8 @@ import { SidenavService } from '../../service/app-service/sidenav.service';
 export class NavbarComponent implements OnInit {
   @Output('close') close: EventEmitter<String> = new EventEmitter();
   public count = 0
-
+  componentType = '';
+  @ViewChild('sidenav') sidenav: MatSidenav;
   constructor(private sidenavService:SidenavService,
     private  addOrderservice : CratService,
     private route : Router
@@ -25,6 +26,16 @@ export class NavbarComponent implements OnInit {
     this.addProduct();
     this.addCount();
     
+    
+  }
+
+  openSidenav(type: string) {
+    this.componentType = type;
+    if(type == 'location' ) {
+      this.sidenav.open(); 
+    } else {
+      this.sidenav.close()
+    }
     
   }
 

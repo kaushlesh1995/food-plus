@@ -62,5 +62,13 @@ export class AppComponent implements OnInit  {
     })
   }
 
+  onScroll(event) {
+    if(event.target.scrollTop > 30) {
+        event.target.classList.add('sticky-header');
+    } else {
+        event.target.classList.remove('sticky-header')
+    }
+  }
+
 
 }
